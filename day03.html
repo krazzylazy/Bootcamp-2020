@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<body>
+    <h1>Day 3</h1>
+    <h2>Preformatting tags<br> and code tags</h2>
+    <hr>
+    <p>
+        <pre>
+            <code>
+                #include&lt;stdio.h&gt;
+                void main(){
+                    return 0;
+                }
+            </code>
+        </pre>
+    </p>
+
+    <h2>Form elements</h2>
+    <form action="">
+        <fieldset>
+            <legend>Login</legend>
+            <div>
+                <label for="username">Username</label><br>
+                <input type="text" placeholder="Email or mobile" autocomplete="off" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="Password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="rem">
+                    <input type="checkbox" id="rem"> Remember me
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+            <div>
+                <a href="#">Forgot password?</a>
+            </div>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Sign up</legend>
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Fullname" id="name" name="name" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="Email" id="email" name="email" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="mobile">Mobile</label><br>
+                <input type="number" placeholder="Mobile" id="mobile" name="mobile" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="gender">Gender</label><br>
+                <select name="gender" id="gender" required>
+                    <option value="">Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div>
+                <label>Gender (Radio)</label><br>
+                <label for="male">
+                    <input type="radio" id="male"> Male
+                </label><br>
+                <label for="female">
+                    <input type="radio" id="female"> Female
+                </label>
+            </div>
+            <div>
+                <label for="dob">Date of birth</label><br>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div>
+                <label for="desc">Describe yourself</label><br>
+                <textarea name="desc" id="desc" cols="70" rows="20" placeholder="Describe about yourself in 150 chars"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Sign up">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
